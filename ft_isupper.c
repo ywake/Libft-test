@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include "./test.h"
-#include "../ft_isupper.c"
+#include "../Libft/ft_isupper.c"
 
 void test(char *str){
 	int i = 0;

@@ -1,4 +1,4 @@
-#include "../ft_strncmp.c"
+#include "../Libft/ft_strncmp.c"
 #include <string.h>
 #include <stdio.h>
 #include "test.h"

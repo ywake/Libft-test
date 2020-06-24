@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "./test.h"
-#include "../ft_strchr.c"
+#include "../Libft/ft_strchr.c"
 
 char *repeat(char *str, char c, int num)
 {

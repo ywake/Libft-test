@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include "./test.h"
-#include "../ft_isascii.c"
+#include "../Libft/ft_isascii.c"
 
 void test(char *str){
 	int i = 0;

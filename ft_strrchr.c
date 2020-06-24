@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include "./test.h"
-#include "../ft_strrchr.c"
-#include "../ft_strlen.c"
+#include "../Libft/ft_strrchr.c"
+#include "../Libft/ft_strlen.c"
 
 char *repeat(char *str, char c, int num)
 {

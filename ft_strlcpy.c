@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include "./test.h"
-#include "../ft_strlcpy.c"
-#include "../ft_strlen.c"
+#include "../Libft/ft_strlcpy.c"
+#include "../Libft/ft_strlen.c"
 
 void	test(int dst_buf,char *dst, char *dst_orig, char *src, size_t size){
 	char errorFlg = 0b0;

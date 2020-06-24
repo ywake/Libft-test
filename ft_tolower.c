@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <ctype.h>
 #include "test.h"
-#include "../ft_tolower.c"
-#include "../ft_isupper.c"
+#include "../Libft/ft_tolower.c"
+#include "../Libft/ft_isupper.c"
 
 
 void test(char *str){

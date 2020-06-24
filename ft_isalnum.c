@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <ctype.h>
 #include "./test.h"
-#include "../ft_isalnum.c"
-#include "../ft_isalpha.c"
-#include "../ft_isdigit.c"
-#include "../ft_islower.c"
-#include "../ft_isupper.c"
+#include "../Libft/ft_isalnum.c"
+#include "../Libft/ft_isalpha.c"
+#include "../Libft/ft_isdigit.c"
+#include "../Libft/ft_islower.c"
+#include "../Libft/ft_isupper.c"
 
 void test(char *str){
 	int i = 0;
