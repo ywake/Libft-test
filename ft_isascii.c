@@ -36,4 +36,6 @@ int	main(void){
 		test_int(invalid_case[i]);
 		i++;
 	}
+	printf("\n↓leakcheck\n\n");
+	while(1);
 }

@@ -49,4 +49,7 @@ int		main(void)
 	printf("------------------\n");
 	printf("test\\200, test\\0\n");
 	test("test\200", "test\0", 6);
+
+	printf("\n↓leakcheck\n\n");
+	while(1);
 }

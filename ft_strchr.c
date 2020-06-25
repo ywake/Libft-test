@@ -85,5 +85,6 @@ int		main(void)
 	// 	test(src2, c[i]);
 	// 	i++;
 	// }
-
+	printf("\n↓leakcheck\n\n");
+	while(1);
 }

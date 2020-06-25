@@ -80,4 +80,6 @@ int		main(void)
 	// test(dst, dst_orig, NULL, 4);
 	// // strlcpy("src=NULL", NULL, 4);
 	// ft_strlcpy("src=NULL", NULL, 4);
+	printf("\n↓leakcheck\n\n");
+	while(1);
 }

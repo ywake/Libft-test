@@ -23,4 +23,6 @@ int		main(void)
 		printf("ft_strlen(\"%s\") => `%zu`\n",test[i],ft_strlen(test[i]));
 		i++;
 	}
+	printf("\n↓leakcheck\n\n");
+	while(1);
 }

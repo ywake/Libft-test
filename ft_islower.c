@@ -23,4 +23,6 @@ int	main(void){
 	printf("\ninvalid case:");
 	test(invalid_case);
 	printf("\n");
+	printf("\n↓leakcheck\n\n");
+	while(1);
 }

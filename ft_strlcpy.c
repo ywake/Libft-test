@@ -62,4 +62,6 @@ int		main(void)
 	printf("> src=NULL check (=>seg fault OK)\n");
 	// strlcpy("src=NULL", NULL, 4);
 	ft_strlcpy("src=NULL", NULL, 4);
+	printf("\n↓leakcheck\n\n");
+	while(1);
 }

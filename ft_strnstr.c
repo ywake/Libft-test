@@ -83,4 +83,6 @@ int		main(void)
 	// test(NULL, needle[1], 15);
 	// printf("\n> needle == NULL\n");
 	// test(heystack, NULL, 15);
+	printf("\n↓leakcheck\n\n");
+	while(1);
 }
