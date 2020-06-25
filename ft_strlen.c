@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-#include "../Libft/ft_strlen.c"
+#include "test.h"
+#include "../Libft/libft.h"
 
 int		main(void)
 {

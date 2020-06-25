@@ -1,11 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
-#include "./test.h"
-#include "../Libft/ft_isalnum.c"
-#include "../Libft/ft_isalpha.c"
-#include "../Libft/ft_isdigit.c"
-#include "../Libft/ft_islower.c"
-#include "../Libft/ft_isupper.c"
+#include "test.h"
+#include "../Libft/libft.h"
 
 void test(char *str){
 	int i = 0;
@@ -40,4 +36,9 @@ int	main(void){
 		test_int(invalid_case[i]);
 		i++;
 	}
+	while (1)
+	{
+		/* for leak check */
+	}
+
 }
