@@ -55,13 +55,14 @@ int		main(void)
 	char *dst_orig = "size=0";
 	test(7, dst, dst_orig, "write", 0);
 
-	printf("> dst=NULL check (=>seg fault OK)\n");
-	// strlcpy(NULL,"NULL test", 4);
-	ft_strlcpy(NULL,"dst=NULL", 4);
+	// printf("> dst=NULL check (=>seg fault OK)\n");
+	// // strlcpy(NULL,"NULL test", 4);
+	// ft_strlcpy(NULL,"dst=NULL", 4);
 
-	printf("> src=NULL check (=>seg fault OK)\n");
-	// strlcpy("src=NULL", NULL, 4);
-	ft_strlcpy("src=NULL", NULL, 4);
+	// printf("> src=NULL check (=>seg fault OK)\n");
+	// // strlcpy("src=NULL", NULL, 4);
+	// ft_strlcpy("src=NULL", NULL, 4);
+
 	printf("\n↓leakcheck\n\n");
 	while(1);
 }
