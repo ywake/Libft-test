@@ -35,12 +35,13 @@ int		main(void)
 		NULL
 	};
 	size_t size[] = {
+		0,
+		2,
 		4,
 		6,
 		7,
 		8,
 		10,
-		0,
 		666
 	};
 	int i = 0;
