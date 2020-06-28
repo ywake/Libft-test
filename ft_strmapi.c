@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include "test.h"
-// #include "../Libft/libft.h"
-#include "../Libft/ft_strmapi.c"
+#include "../Libft/libft.h"
+// #include "../Libft/ft_strmapi.c"
 
 char func(unsigned int n, char c)
 {
