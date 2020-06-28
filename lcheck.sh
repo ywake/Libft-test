@@ -1,5 +1,6 @@
 gcc -Wall -Werror -Wextra $1 -L . -lft
 ./a.out &
 sleep 1
-leaks $! | grep "leaks for"
+leaks $! | grep -E "leaks? for"
+# leaks $!
 kill $!
