@@ -44,8 +44,8 @@ int main(void)
 	printf("== usual input ==\n");
 	// printf("head == NULL\n");
 	// test(NULL, new, "null");
-	printf("new == NULL\n");
-	test(head, NULL, "null");
+	// printf("new == NULL\n");
+	// test(head, NULL, "null");
 	// printf("head, new == NULL\n");
 	// test(NULL, NULL, "null");
 
