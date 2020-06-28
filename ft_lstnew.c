@@ -20,7 +20,11 @@ void test(void *content)
 
 int main(void)
 {
+	printf("== usual input ==\n");
 	test("this is test.");
+	printf("== unusual input ==\n");
+	printf("NULL input\n");
+	test(NULL);
 
 	printf("\n↓leakcheck\n\n");
 	while(1);

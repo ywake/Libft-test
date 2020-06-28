@@ -21,7 +21,13 @@ int main(void)
 	*head = ft_lstnew("first lst");
 	new = ft_lstnew("second lst");
 	ft_lstadd_front(head, new);
+
+	printf("== usual input ==\n");
 	test(*head, 2);
+
+	printf("== usual input ==\n");
+	printf("> NULL input\n");
+	test(NULL, 0);
 
 	free((*head)->next);
 	free(*head);
