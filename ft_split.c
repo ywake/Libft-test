@@ -30,6 +30,7 @@ int		main(void)
 	test("   this    is   test", ' ');
 
 	printf("\n== advanced input ==\n");
+	test("\0 this is test ", ' ');
 	test("   ", ' ');
 	test("split  ||this|for|me|||||!|", '|');
 	test("      split       this for   me  !       ", ' ');
