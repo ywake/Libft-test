@@ -3,31 +3,60 @@
 #include "test.h"
 #include "../Libft/libft.h"
 
-void test(t_list **head, t_list *new, char *expect)
+void print_list(t_list *lst)
 {
-	t_list *old_head;
+	if (!lst)
+	{
+		printf("(null)\n");
+		return ;
+	}
+	printf("▼▼▼ list elem ▼▼▼\n");
+	printf("lst: %p\n", lst);
+	printf("%p->content: %s\n", lst, lst->content);
+	printf("%p->next   : %p\n", lst, lst->next);
+	printf("▲▲▲  list elem  ▲▲▲\n");
+	if (lst->next)
+		print_list(lst->next);
+}
 
-	old_head = *head;
-	printf("head: %p\n", *head);
-	printf("head->content: %s\n", (*head)->content);
-	printf("head->next   : %p\n", (*head)->next);
-	printf("new: %p\n", new);
-	printf("new->content: %s\n", new->content);
-	printf("new->next   : %p\n", new->next);
+void *free_list(t_list *lst)
+{
+	if (!lst)
+		return NULL;
+	free_list(lst->next);
+	free(lst);
+	return NULL;
+}
 
-	printf("↓\nft_lstaddfront(head, new)\n↓\n");
+void test(t_list **head, t_list *new, t_list *expect_next, char *expect)
+{
+	printf("print head\n");
+	print_list(*head);
+	printf("\n");
+	printf("print new\n");
+	print_list(new);
+
+	printf(BOLDYELLOW"↓\nft_lstadd_front(head, new)\n↓\n"RESET);
 	ft_lstadd_front(head, new);
-	if (ft_strncmp((*head)->content, expect, strlen(expect)) == 0 && (*head)->next == old_head)
-		printf(GREEN);
-	else
-		printf(BOLDRED);
-	printf("head->content: %s\n", (*head)->content);
-	printf("head->next   : %p\n", (*head)->next);
-	printf("next->content: %s\n", (*head)->next->content);
-	printf("next->next   : %p\n", (*head)->next->next);
-	printf(RESET);
-	free((*head)->next);
-	free(*head);
+
+	if (*head)
+	{
+		if (ft_strncmp((*head)->content, expect, strlen(expect)) == 0 && (*head)->next == expect_next)
+			printf(GREEN);
+		else
+		{
+			printf(BOLDRED);
+			printf("]] strncmp      : %d\n", ft_strncmp((*head)->content, expect, strlen(expect)));
+			printf("]] expect next  :%p\n", expect_next);
+			printf("]] (*head)->next:%p\n", (*head)->next);
+		}
+		printf("print head\n");
+		print_list(*head);
+		printf(RESET);
+		free_list(*head);
+	} else {
+		printf("*head is NULL\n");
+	}
 }
 
 int main(void)
@@ -38,16 +67,28 @@ int main(void)
 	*head = ft_lstnew("first lst");
 	new = ft_lstnew("second lst");
 
+	printf("=================\n");
 	printf("== usual input ==\n");
-	test(head, new, "second lst");
+	printf("=================\n");
+	test(head, new, *head, "second lst");
 
-	printf("== usual input ==\n");
-	// printf("head == NULL\n");
-	// test(NULL, new, "null");
-	// printf("new == NULL\n");
-	// test(head, NULL, "null");
-	// printf("head, new == NULL\n");
-	// test(NULL, NULL, "null");
+	printf("\n===================\n");
+	printf("== unusual input ==\n");
+	printf("===================\n");
+	printf("> head == NULL\n");
+	t_list *nul = NULL;
+	t_list *new2 = ft_lstnew("null test");
+	test(&nul, new2, nul, "null test");
+	printf("\n");
+	printf("> new == NULL\n");
+	t_list *head2 = ft_lstnew("null test2");
+	t_list *nul2 = NULL;
+	test(&head2, nul2, NULL, "");
+	printf("\n");
+	printf("> head, new == NULL\n");
+	t_list *nul3 = NULL;
+	t_list *nul4 = NULL;
+	test(&nul3, nul4, NULL, "");
 
 	printf("\n↓leakcheck\n\n");
 	while(1);
