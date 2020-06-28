@@ -77,6 +77,9 @@ int		main(void)
 	memset(dest_org, 'r', 6);
 	dest[10] = 'a';
 	test(dest, dest_org, "lorem ipsum dolor sit amet",  1);
+	char t1[10] = {'t','o','t','o',0,0,0,0,0,0};
+	char t2[10] = {'t','o','t','o',0,0,0,0,0,0};
+	test(t1, t2, "", 0);
 	// printf("> src=NULL check (=>seg fault OK)\n");
 	// test(dst, dst_orig, NULL, 4);
 	// // strlcpy("src=NULL", NULL, 4);
