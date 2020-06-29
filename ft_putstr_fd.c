@@ -2,7 +2,7 @@
 #include <string.h>
 #include <fcntl.h>
 #include "test.h"
-#include "../Libft/libft.h"
+#include "libft.h"
 // #include "../Libft/ft_putstr_fd.c"
 
 void	test(char *s, int fd)

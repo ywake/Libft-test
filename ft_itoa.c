@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "test.h"
-#include "../Libft/libft.h"
+#include "libft.h"
 // #include "../Libft/ft_itoa.c"
 
 void	test(int n)

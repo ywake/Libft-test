@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "test.h"
-#include "../Libft/libft.h"
+#include "libft.h"
 
 void	test(int dst_buf,char *dst, char *dst_orig, char *src, size_t size){
 	char errorFlg = 0b0;

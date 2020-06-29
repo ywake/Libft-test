@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include "test.h"
-// #include "../Libft/libft.h"
-#include "../Libft/ft_split.c"
+#include "libft.h"
+// #include "../Libft/ft_split.c"
 
 void	test(char const *s, char c)
 {

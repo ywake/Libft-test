@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "test.h"
-#include "../Libft/libft.h"
+#include "libft.h"
 
 void test(t_list *lst, t_list *expect)
 {

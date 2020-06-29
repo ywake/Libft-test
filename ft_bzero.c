@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <limits.h>
 #include "test.h"
-#include "../Libft/libft.h"
+#include "libft.h"
 
 void test(void *org_src, void *ft_src, size_t len, int check_len)
 {

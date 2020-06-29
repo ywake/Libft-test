@@ -1,7 +1,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "test.h"
-#include "../Libft/libft.h"
+#include "libft.h"
 
 void test(char *s1, char *s2, int size)
 {

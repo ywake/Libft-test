@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "test.h"
-#include "../Libft/libft.h"
+#include "libft.h"
 
 void	test(char *src){
 	char	*org_rtn = strdup(src);

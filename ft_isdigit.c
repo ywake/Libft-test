@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include "test.h"
-#include "../Libft/libft.h"
+#include "libft.h"
 
 void test(char *str){
 	int i = 0;
