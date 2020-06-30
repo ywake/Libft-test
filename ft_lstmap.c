@@ -49,6 +49,7 @@ void test(t_list *lst)
 	} else {
 		printf(BOLD"new is NULL\n"RESET);
 	}
+	ft_lstclear(&lst, del);
 	ft_lstclear(&new, del);
 }
 
