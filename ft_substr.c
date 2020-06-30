@@ -20,6 +20,7 @@ int		main(void)
 	printf("\n== advanced input ==\n");
 	test("this is test", 5, 20);
 	test("this is test", 20, 5);
+	test("test\0testtest", 10, 1);
 	test("", 5, 3);
 	// test(NULL, 5, 3); -> seg fault
 	test("\200\t\x41\0", 0, 4);

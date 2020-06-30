@@ -80,6 +80,12 @@ int		main(void)
 	printf("----- c == '\\0' -----\n");
 	test(src, '\0', len);
 
+	printf("===== deepthought error cace =====\n");
+	src = "LIPB5lNMxDn3eWZc8";
+	test(src, 'L', 0);
+	src = "UVbfHyqB6aZ";
+	test(src, 'b', 3);
+
 	// printf("----- src == empty -----\n");
 	// char *src2 = "";
 	// i = 0;
