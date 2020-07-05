@@ -18,6 +18,8 @@ void	test(char const *s, char c)
 		free(rtn[i]);
 		i++;
 	}
+	if (rtn[i] == NULL)
+		printf("NULL\n");
 	free(rtn);
 	// printf(RESET);
 }
@@ -35,6 +37,8 @@ int		main(void)
 	test("   ", ' ');
 	test("split  ||this|for|me|||||!|", '|');
 	test("      split       this for   me  !       ", ' ');
+	test("", '\0');
+	test("\0 this is test ", '\0');
 	// test("  \t\t \t\t    \t\t", " \t", "");
 	// test("this is test", 5, 20);
 	// test("this is test", 20, 5);
