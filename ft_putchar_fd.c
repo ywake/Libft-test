@@ -5,7 +5,7 @@
 #include "libft.h"
 // #include "../Libft/ft_putchar_fd.c"
 
-void	test(char c, int fd)
+void	test(unsigned char c, int fd)
 {
 	printf("> '%c'\n", c);
 	ft_putchar_fd(c, fd);
@@ -21,6 +21,7 @@ int		main(void)
 	printf("== basic input ==\n");
 	test('A', 1);
 	test('\n', 1);
+	test(240, 1);
 	// int fd = open("./out_ft_puchar_fd", O_RDWR);
 	// test('A', fd);
 	// close(fd);

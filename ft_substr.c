@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <limits.h>
 #include "test.h"
 #include "libft.h"
 
@@ -15,11 +16,13 @@ int		main(void)
 {
 	printf("== basic input ==\n");
 	test("this is test", 5, 2);
+	test("this is test", 12, 2);
 	test("this is test", 5, 7);
 
 	printf("\n== advanced input ==\n");
 	test("this is test", 5, 20);
 	test("this is test", 20, 5);
+	test("this is test", 5, -1);
 	test("test\0testtest", 10, 1);
 	test("", 5, 3);
 	// test(NULL, 5, 3); -> seg fault

@@ -82,9 +82,9 @@ int		main(void)
 
 	printf("===== deepthought error cace =====\n");
 	src = "LIPB5lNMxDn3eWZc8";
-	test(src, 'L', 0);
+	test(src, 'L', strlen(src));
 	src = "UVbfHyqB6aZ";
-	test(src, 'b', 3);
+	test(src, 'b', strlen(src));
 
 	// printf("----- src == empty -----\n");
 	// char *src2 = "";
