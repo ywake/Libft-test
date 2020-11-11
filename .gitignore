@@ -1,5 +1,4 @@
 *
 !*.c
 !.gitignore
-!lcheck.sh
-!leakcheck
+!test.sh
