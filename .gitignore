@@ -1,4 +1,6 @@
 *
-!*.c
 !.gitignore
-!test.sh
+!.clang-format
+!.editorconfig
+!*.cpp
+!Makefile

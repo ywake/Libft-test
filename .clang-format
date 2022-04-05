@@ -1,0 +1,10 @@
+{
+  BasedOnStyle: LLVM,
+  UseTab: Never,
+  IndentWidth: 2,
+  BreakBeforeBraces: Linux,
+  AllowShortFunctionsOnASingleLine: All,
+  IndentCaseLabels: false,
+  NamespaceIndentation: All,
+  BreakConstructorInitializers: AfterColon,
+}
